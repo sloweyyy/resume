@@ -18,7 +18,7 @@ export const RESUME_DATA: ResumeData = {
 		</>
 	),
 	avatarUrl: "https://avatars.githubusercontent.com/u/37492460?v=4",
-	personalWebsiteUrl: "https://slowey.works",
+	personalWebsiteUrl: "https://slowey.dev",
 	contact: {
 		email: "truonglevinhphuc2006@gmail.com",
 		tel: "+84 367 855 090",
