@@ -1,0 +1,13 @@
+# Robots.txt for https://cv.slowey.dev
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /graphql
+
+# Sitemap location
+Sitemap: https://cv.slowey.dev/sitemap.xml
+
+# Crawl-delay for responsible crawling
+Crawl-delay: 1
