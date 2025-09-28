@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 import { RESUME_DATA } from "../data/resume-data";
+import { getGitHubAvatarAction } from "@/actions/github-actions";
 
 export const runtime = "edge";
 
@@ -12,6 +13,9 @@ export const size = {
 export const contentType = "image/png";
 
 export default async function Image() {
+  // Fetch dynamic avatar URL
+  const avatarUrl = await getGitHubAvatarAction();
+  
   return new ImageResponse(
     <div
       style={{
@@ -35,7 +39,7 @@ export default async function Image() {
       >
         {/* biome-ignore lint/performance/noImgElement: ImageResponse context requires img element */}
         <img
-          src={RESUME_DATA.avatarUrl}
+          src={avatarUrl}
           alt={RESUME_DATA.name}
           style={{
             width: "150px",

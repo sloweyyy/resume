@@ -2,6 +2,7 @@ import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import Image, { type StaticImageData } from "next/image";
 import React from "react";
 import { Avatar } from "@/components/avatar";
+import { DynamicAvatar } from "@/components/dynamic-avatar";
 import { Button } from "@/components/ui/button";
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 import { XIcon } from "@/components/icons/x-icon";
@@ -199,9 +200,9 @@ export function Header() {
         />
       </div>
 
-      <Avatar
+      <DynamicAvatar
         className="size-28"
-        src={RESUME_DATA.avatarUrl}
+        staticSrc={RESUME_DATA.avatarUrl}
         alt={`${RESUME_DATA.name}'s profile picture`}
         fallback={RESUME_DATA.initials}
       />

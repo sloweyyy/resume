@@ -1,4 +1,5 @@
 import type { ResumeData } from "@/lib/types";
+import { getStaticAvatarUrl } from "@/lib/dynamic-avatar";
 
 export const RESUME_DATA: ResumeData = {
 	name: "Truong Le Vinh Phuc",
@@ -17,7 +18,7 @@ export const RESUME_DATA: ResumeData = {
 			projects.
 		</>
 	),
-	avatarUrl: "https://avatars.githubusercontent.com/u/37492460?v=4",
+	avatarUrl: getStaticAvatarUrl(), // Dynamic avatar URL from GitHub API
 	personalWebsiteUrl: "https://slowey.dev",
 	contact: {
 		email: "truonglevinhphuc2006@gmail.com",

@@ -16,6 +16,9 @@ const nextConfig = {
   // Enable SWC minification
   swcMinify: true,
 
+  // Optimize font loading
+  optimizeFonts: true,
+
   // Headers for security and performance
   async headers() {
     return [
