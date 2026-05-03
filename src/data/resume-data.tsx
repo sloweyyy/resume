@@ -4,21 +4,21 @@ import { getStaticAvatarUrl } from "@/lib/dynamic-avatar";
 export const RESUME_DATA: ResumeData = {
 	name: "Truong Le Vinh Phuc",
 	initials: "TP",
-	location: "Di An, Binh Duong",
-	locationLink: "https://www.google.com/maps/place/Di+An,+Binh+Duong,+Vietnam",
-	about:
-		"Versatile DevOps/Software Engineer skilled in Java, .NET, Node.js, Python, and cloud-native development.",
+	location: "Ho Chi Minh city",
+	locationLink:
+		"https://www.google.com/maps/place/Ho+Chi+Minh+City,+Vietnam",
+	about: "Product Engineer • Software Engineering, DevOps & Product",
 	summary: (
 		<>
-			Versatile DevOps/Software Engineer skilled in Java, .NET, Node.js, Python,
-			and cloud-native development. Experienced in designing microservices,
-			DevOps automation, CI/CD, and real-time data systems using Docker,
-			Kubernetes, Kafka, and Prometheus. Strong record of leading teams and
-			delivering end-to-end solutions across web, blockchain, and AI/ML
-			projects.
+			Product Engineer spanning software engineering, DevOps, and product
+			management. Proven experience leading cross-functional teams and shipping
+			end-to-end solutions — from architecture and infrastructure to roadmap
+			and delivery. Strong background in Agile methodologies and translating
+			technical complexity into business value across web, blockchain, and
+			AI/ML domains.
 		</>
 	),
-	avatarUrl: getStaticAvatarUrl(), // Dynamic avatar URL from GitHub API
+	avatarUrl: getStaticAvatarUrl(),
 	personalWebsiteUrl: "https://slowey.dev",
 	contact: {
 		email: "truonglevinhphuc2006@gmail.com",
@@ -40,7 +40,7 @@ export const RESUME_DATA: ResumeData = {
 		{
 			school:
 				"University of Information Technology - Vietnam National University, Ho Chi Minh city",
-			degree: "Bachelor of Software Engineering",
+			degree: "Bachelor of Science in Software Engineering",
 			start: "2022",
 			end: "2026",
 		},
@@ -51,41 +51,54 @@ export const RESUME_DATA: ResumeData = {
 			link: "https://katalon.com/",
 			badges: [
 				"On-site/Remote",
-				"Product Support",
-				"AI",
-				"Testing",
-				"Research",
+				"Product Engineering",
+				"AI/LLM",
+				"DevOps",
+				"Product Owner",
 			],
-			title: "AI Product Support Engineer",
+			title: "Product Engineer",
 			start: "2025",
 			end: null,
 			description: (
 				<>
 					<ul className="list-inside list-disc">
 						<li>
-							Respond to customer inquiries, troubleshoot technical issues, and
-							provide timely solutions
+							Own the Katalon Support Assistant end-to-end as Product Owner and
+							Engineering Lead — driving product vision, roadmap, scoping, and
+							cross-team alignment while delivering the technical design and
+							implementation
 						</li>
 						<li>
-							Collaborate with cross-functional teams, including Product,
-							Engineering, and Account Management, to improve the product and
-							address customer needs
+							Architect and ship a multi-agent LLM system (LangGraph, LangChain,
+							Anthropic Claude) that routes queries across documentation, live
+							web search, and Salesforce CRM, reducing support case volume by
+							30%
 						</li>
 						<li>
-							Maintain and expand the knowledge base with FAQs and support
-							articles for better customer self-service
+							Build and operate AWS infrastructure (ECS, ALB, S3, DynamoDB,
+							CloudFormation) with ArgoCD GitOps pipelines and separate QA/prod
+							environments — handling deploy, observability, and on-call
 						</li>
 						<li>
-							Work on enhancing product functionality by gathering feedback and
-							suggesting improvements
+							Design and ship additional internal and customer-facing AI tools
+							that automate support workflows, knowledge-base authoring, and
+							ticket triage for both employees and end users
 						</li>
 						<li>
-							Contribute to a new AI project, exploring innovative solutions to
-							improve support and automation
+							Instrument production observability — structured logging, LLM call
+							tracing, Slack alerting, and post-conversation CSAT — and feed
+							signals back into prompts, retrieval, and routing for continuous
+							quality improvement
 						</li>
 						<li>
-							Stay up to date with new features and technologies to provide the
-							best support experience
+							Partner with Product, Engineering, and Account Management to
+							translate customer feedback into prioritized backlog items, write
+							PRDs and acceptance criteria, and run release planning
+						</li>
+						<li>
+							Maintain and expand the knowledge base with high-value FAQs and
+							support articles, strengthening customer self-service and AI
+							retrieval quality
 						</li>
 					</ul>
 				</>
@@ -100,7 +113,6 @@ export const RESUME_DATA: ResumeData = {
 				"Spring Boot",
 				"PostgreSQL",
 				"CI/CD",
-				"Scrum Master",
 			],
 			title: "Java Backend Developer Intern",
 			start: "2024",
@@ -109,110 +121,155 @@ export const RESUME_DATA: ResumeData = {
 				<>
 					<ul className="list-inside list-disc">
 						<li>
-							Led a team of 7 as Scrum Master to develop RESTful APIs for an
-							online course platform using Spring Boot
+							Supported CI/CD improvements and streamlined deployment workflows
+							for a Spring Boot API system
 						</li>
 						<li>
-							Optimized PostgreSQL database performance, enhancing system
-							efficiency
+							Optimized PostgreSQL queries and improved system efficiency
+							through performance-oriented fixes
 						</li>
-						<li>Streamlined deployment processes using CI/CD pipelines</li>
+						<li>
+							Worked in Agile/Scrum with Jira, contributing to sprint planning
+							and delivery
+						</li>
 					</ul>
 				</>
 			),
 		},
 	],
 	skills: [
+		// Engineering
 		"Go",
-		".NET Core",
+		".NET",
 		"Java",
-		"Spring Boot",
 		"Node.js",
-		"NestJS",
-		"React.js",
-		"Next.js",
 		"Python",
-		"Flask",
+		"TypeScript",
+		"React",
+		"Next.js",
+		"Spring Boot",
 		"FastAPI",
+		"gRPC",
+		"Microservices",
+		"Event-driven Systems",
+		"System Design",
+		// Cloud & DevOps
+		"AWS (EKS/ECS/CloudFormation)",
 		"Docker",
 		"Kubernetes",
 		"Helm",
 		"Istio",
-		"Traefik",
+		"Terraform",
+		"GitHub Actions",
+		"ArgoCD",
+		// Data
 		"PostgreSQL",
 		"MongoDB",
 		"Redis",
 		"Kafka",
-		"RabbitMQ",
-		"Prometheus",
-		"Grafana",
-		"ELK Stack",
-		"GitHub Actions",
-		"CI/CD",
-		"gRPC",
-		"Microservices",
-		"OAuth2",
-		"JWT",
-		"Blockchain",
-		"Solidity",
-		"Ethereum",
-		"Team Leadership",
+		// AI / LLM
+		"LangGraph",
+		"LangChain",
+		"Anthropic Claude",
+		"Multi-agent Systems",
+		"RAG",
+		// Product
+		"PRD Writing",
+		"Roadmap Planning",
+		"Agile/Scrum",
+		"Stakeholder Communication",
+		"Jira",
 	],
 	projects: [
 		{
-			title: "GreenLedger – Carbon Credit Management Platform",
+			title: "Katalon Support Assistant",
+			link: {
+				label: "assistant.katalon.com",
+				href: "https://assistant.katalon.com",
+			},
 			techStack: [
-				"Go",
-				"Gin",
-				"gRPC",
-				"PostgreSQL",
-				"Redis",
-				"Kafka",
-				"Docker",
-				"Kubernetes",
-				"Traefik",
-				"Prometheus",
-				"Grafana",
-				"GitHub Actions",
+				"Python",
+				"FastAPI",
+				"LangGraph",
+				"Anthropic Claude",
+				"Next.js",
+				"AWS",
+				"DynamoDB",
+				"ArgoCD",
 			],
 			description:
-				"Designed, developed, and deployed a DevOps-ready, microservices-based platform for carbon credit management and environmental impact tracking. Architected six independent Go microservices with clean architecture, JWT authentication, RBAC, and Kafka-powered event-driven messaging.",
+				"Owned product and engineering for an internal AI support platform. Built a multi-agent LLM system routing queries across docs, web search, and Salesforce CRM, reducing support case volume by 30%. Deployed on AWS via CloudFormation and ArgoCD GitOps with full observability and CSAT feedback loops.",
+		},
+		{
+			title: "llmfit – Web Dashboard for Hardware-Aware LLM Recommendation",
 			link: {
 				label: "github.com",
-				href: "https://github.com/sloweyyy/GreenLedger",
+				href: "https://github.com/AlexsJones/llmfit",
 			},
+			techStack: [
+				"React",
+				"JavaScript",
+				"CSS",
+				"REST APIs",
+				"Component Architecture",
+				"Open Source",
+				"Git",
+				"GitHub",
+			],
+			description:
+				"Contributed to llmfit-web, the dashboard of a 21k+ star open-source project for hardware-aware LLM model recommendation. Refactored a monolithic frontend into a modular component architecture with side-by-side model comparison, advanced filtering, and multi-theme support. Integrated UI with backend APIs to expose richer model metadata, runtime states, and download flows.",
 		},
 		{
 			title: "Cloud-Native E-Commerce Platform",
 			techStack: [
-				".NET Core",
-				"RabbitMQ",
-				"MongoDB",
-				"Redis",
-				"PostgreSQL",
-				"SQL Server",
-				"Ocelot",
-				"Docker",
+				"AWS EKS",
+				"CloudFormation",
 				"Kubernetes",
 				"Helm",
 				"Istio",
-				"ELK Stack",
+				".NET 8",
+				"gRPC",
 				"Prometheus",
-				"Grafana",
-				"IdentityServer4",
 			],
 			description:
-				"Designed and implemented a cloud-native e-commerce platform using modern microservices architecture. Built five independent microservices with event-driven communication, polyglot persistence, and centralized API Gateway with Istio service mesh.",
+				"Architected AWS EKS infrastructure with CloudFormation IaC, multi-AZ deployment, auto-scaling, and IRSA-based zero-credential security. Built 19 Helm charts and GitHub Actions CI/CD with Trivy and CodeQL scanning. Designed 5 .NET microservices on Clean Architecture + CQRS with Istio mTLS service mesh and full Prometheus/Grafana/ELK/Jaeger observability.",
 			link: {
 				label: "github.com",
 				href: "https://github.com/sloweyyy/cloud-native-ecommerce-platform",
 			},
 		},
 		{
-			title: "Machine Learning Experiment Management",
-			techStack: ["Flask", "Next.js", "React.js", "OpenCV", "TensorFlow"],
+			title: "GreenLedger – Carbon Credit Management Platform",
+			techStack: [
+				"Go",
+				"gRPC",
+				"PostgreSQL",
+				"Kafka",
+				"Kubernetes",
+				"Traefik",
+				"Prometheus",
+				"Grafana",
+			],
 			description:
-				"Developed a scalable ML experiment management system for MNIST classification tasks with real-time training progress monitoring using WebSocket, customizable hyperparameters, and sortable result comparison tables.",
+				"Designed and deployed a microservices platform with 6 independent Go services for carbon credit management. Implemented JWT auth, RBAC, and Kafka event-driven messaging across services. Built production Kubernetes infrastructure with auto-scaling, full observability, and security-focused CI/CD pipelines with vulnerability scanning.",
+			link: {
+				label: "github.com",
+				href: "https://github.com/sloweyyy/GreenLedger",
+			},
+		},
+		{
+			title: "Machine Learning Experiment Management",
+			techStack: [
+				"Flask",
+				"Next.js",
+				"React.js",
+				"OpenCV",
+				"TensorFlow",
+				"WebSocket",
+				"MySQL",
+			],
+			description:
+				"Built a scalable ML experiment management system for MNIST classification with real-time training monitoring. Developed a web interface for hyperparameter configuration, run comparison, and sortable result tables. Implemented WebSocket-based live progress updates and a Flask backend orchestrating model training.",
 			link: {
 				label: "github.com",
 				href: "https://github.com/sloweyyy/ExperimentHub",
@@ -231,77 +288,37 @@ export const RESUME_DATA: ResumeData = {
 				"Alchemy",
 			],
 			description:
-				"Developed a Blockchain-based Online Notarization Platform offering secure digital notarization services. Leveraged Ethereum blockchain with Solidity smart contracts and NFT technology for document authenticity and ownership verification.",
+				"Led backend development for a secure digital notarization platform on Ethereum smart contracts and NFT technology. Designed document authentication workflows and integrated tamper-proof record keeping across web and mobile clients. Managed a team of 10 with Agile methodology — won First Prize at IT Hackathon 2025.",
 			link: {
 				label: "github.com",
 				href: "https://github.com/sloweyyy/Trustify-Backend",
 			},
 		},
-		{
-			title: "Resort Management System",
-			techStack: [
-				"NestJS",
-				"React.js",
-				"MongoDB",
-				"Railway",
-				"Netlify",
-				"GitHub Actions",
-				"Jest",
-			],
-			description:
-				"Led team development of a scalable Resort Management System using NestJS and MongoDB. Implemented JWT authentication, Google OAuth 2.0, PayOS payment integration, and comprehensive management features for reservations, rooms, billing, and employees.",
-			link: {
-				label: "github.com",
-				href: "https://github.com/FiveD-SE/ResortManagementSystem-BE",
-			},
-		},
-		{
-			title: "T-Shirt and Tote Bag Design Platform Powered by AI",
-			techStack: ["React Native", "Node.js", "Firebase", "Railway"],
-			description:
-				"Developed an intuitive design tool for creating custom t-shirts and tote bags, integrating Stable Diffusion API for AI-generated product features. Built a robust e-commerce platform with product listings, orders, and sales tracking.",
-			link: {
-				label: "github.com",
-				href: "https://github.com/FiveD-SE/Enigma-Frontend",
-			},
-		},
 	],
 	certificates: [
 		{
-			name: "Aha! Product Management Professional Certificate",
-			issuer: "LinkedIn & Aha!",
-			date: "May 2024",
-			link: "https://www.linkedin.com/learning/certificates/e76eefcade4c7063399910e918af91d5357f31251ee8fe26611e052f3750a837",
+			name: "Applied Data Science Lab",
+			issuer: "WorldQuant University",
+			date: "Feb 2026",
+			link: "https://www.credly.com/badges/25639ae0-6f15-4d7f-b69d-f343d502901d",
 		},
 		{
-			name: "Google Project Management",
-			issuer: "Google",
-			date: "Aug 2024",
-			link: "https://www.coursera.org/account/accomplishments/specialization/QHDX4GP53VT9",
-		},
-		{
-			name: "Agile Software Development",
-			issuer: "LinkedIn",
-			date: "May 2024",
-			link: "https://www.linkedin.com/learning/certificates/c4d2979167054d8518c4120b429c13c93537bb714be993dc9b669496b397b558",
-		},
-		{
-			name: "AWS Essential Training For Developers",
-			issuer: "LinkedIn",
-			date: "May 2024",
-			link: "https://www.linkedin.com/learning/certificates/89a52801acfc17eef35c5b30cdef3814ba9cc581769df6d0cb812e5b6289de64",
-		},
-		{
-			name: "Software Development Life Cycle (SLDC)",
-			issuer: "LinkedIn",
-			date: "May 2024",
-			link: "https://www.linkedin.com/learning/certificates/8868d0ed533902f52728d2f5425348933cb86584de4e0bdb7ce441845833538c",
+			name: "AWS Cloud Practitioner Essentials",
+			issuer: "AWS",
+			date: "Oct 2025",
+			link: "https://www.coursera.org/account/accomplishments/verify/U135NA1X7RCI",
 		},
 		{
 			name: "Katalon Expert Level Certification",
 			issuer: "Katalon",
 			date: "Mar 2025",
 			link: "https://academy.katalon.com/mcertificate/67f7435bde1f4",
+		},
+		{
+			name: "Developing AI Applications with Python and Flask",
+			issuer: "IBM",
+			date: "Feb 2025",
+			link: "https://www.coursera.org/account/accomplishments/verify/3R8IYF472T6Z",
 		},
 		{
 			name: "Hands-on Introduction to Linux Commands and Shell Scripting",
@@ -314,12 +331,6 @@ export const RESUME_DATA: ResumeData = {
 			issuer: "IBM",
 			date: "Feb 2025",
 			link: "https://www.coursera.org/account/accomplishments/verify/I1CAESQS26K7",
-		},
-		{
-			name: "Developing AI Applications with Python and Flask",
-			issuer: "IBM",
-			date: "Feb 2025",
-			link: "https://www.coursera.org/account/accomplishments/verify/3R8IYF472T6Z",
 		},
 		{
 			name: "Developing Back-End Apps with Node.js and Express",
@@ -338,6 +349,12 @@ export const RESUME_DATA: ResumeData = {
 			issuer: "Udemy",
 			date: "Aug 2024",
 			link: "https://www.udemy.com/certificate/UC-38f667a7-4599-45fb-bb79-fe591882eeec/",
+		},
+		{
+			name: "Google Project Management",
+			issuer: "Google",
+			date: "Aug 2024",
+			link: "https://www.coursera.org/account/accomplishments/specialization/QHDX4GP53VT9",
 		},
 		{
 			name: "Frontend Developer (React) Certificate",
@@ -364,10 +381,70 @@ export const RESUME_DATA: ResumeData = {
 			link: "https://www.linkedin.com/learning/certificates/60a36c85a8bef42d2c84daf89fe7038c45faba19f7b353821f8d64bda545957b",
 		},
 		{
+			name: "Career Essentials In GitHub Professional Certificate",
+			issuer: "LinkedIn",
+			date: "May 2024",
+		},
+		{
 			name: "Complete Guide To Apache Kafka",
 			issuer: "LinkedIn",
 			date: "May 2024",
 			link: "https://www.linkedin.com/learning/certificates/51e829b46de5a3927a332cd4261c0243ca4657099ea797169e0f8dd1dbbd65b8",
+		},
+		{
+			name: "AWS Essential Training For Developers",
+			issuer: "LinkedIn",
+			date: "May 2024",
+			link: "https://www.linkedin.com/learning/certificates/89a52801acfc17eef35c5b30cdef3814ba9cc581769df6d0cb812e5b6289de64",
+		},
+		{
+			name: "Agile Software Development",
+			issuer: "LinkedIn",
+			date: "May 2024",
+			link: "https://www.linkedin.com/learning/certificates/c4d2979167054d8518c4120b429c13c93537bb714be993dc9b669496b397b558",
+		},
+		{
+			name: "Software Development Life Cycle (SDLC)",
+			issuer: "LinkedIn",
+			date: "May 2024",
+			link: "https://www.linkedin.com/learning/certificates/8868d0ed533902f52728d2f5425348933cb86584de4e0bdb7ce441845833538c",
+		},
+		{
+			name: "Aha! Product Management Professional Certificate",
+			issuer: "LinkedIn & Aha!",
+			date: "May 2024",
+			link: "https://www.linkedin.com/learning/certificates/e76eefcade4c7063399910e918af91d5357f31251ee8fe26611e052f3750a837",
+		},
+	],
+	awards: [
+		{
+			title: "First Prize at IT Hackathon 2025 – Solana Pragmatic",
+			issuer:
+				"Youth Union – Student Association, Faculty of Computer Science and Engineering, International University – VNUHCM",
+			date: "May 2025",
+			description:
+				"Won First Prize in the IT Hackathon 2025 (Solana Pragmatic track) with “Trustify,” a blockchain-powered online-notarization platform that leverages the Solana blockchain to mint NFT certificates, guaranteeing tamper-proof, transparent, and legally compliant remote notarization.",
+		},
+		{
+			title: "Top 30 at Web3 HackFest 2025 – Web3 & AI Convergence",
+			issuer: "VBI Academy",
+			date: "Jan 2025",
+			description:
+				"Achieved Top 30 in the Web3 HackFest 2025 with “Trustify”, a decentralized platform developed for secure and transparent online notarization leveraging blockchain technology and AI.",
+		},
+		{
+			title: "Consolation Prize at SEAPP Contest 2024",
+			issuer: "Department of Software Engineering – UIT, VNUHCM",
+			date: "Nov 2024",
+			description:
+				"Awarded the Consolation Prize for the project “Enigma – A Dropshipping Design and Sales Platform,” recognized as one of the top innovations. The platform showcased advanced mobile development, seamless integration of AI-powered machine learning, and e-commerce solutions, enabling efficient product customization, order management, and a user-friendly shopping experience.",
+		},
+		{
+			title: "2nd Runner-up at GDSC IDEA CONTEST 2023: THiNK",
+			issuer: "Google Developer Student Club – HCMUT",
+			date: "Jun 2023",
+			description:
+				"Achieved Third Place in the GDSC IDEA CONTEST 2023 with “FutureConnect”, a platform designed to bridge the gap between students and businesses.",
 		},
 	],
 } as const;

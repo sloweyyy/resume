@@ -53,6 +53,13 @@ export interface ResumeData {
     date: string;
     link?: string;
   }>;
+  awards: Array<{
+    title: string;
+    issuer: string;
+    date: string;
+    description?: string;
+    link?: string;
+  }>;
 }
 
 // GraphQL compatible types (without React components)
@@ -103,6 +110,14 @@ export interface GraphQLCertificate {
   link?: string;
 }
 
+export interface GraphQLAward {
+  title: string;
+  issuer: string;
+  date: string;
+  description?: string;
+  link?: string;
+}
+
 export interface GraphQLMe {
   name: string;
   initials: string;
@@ -118,6 +133,7 @@ export interface GraphQLMe {
   skills: string[];
   projects: GraphQLProject[];
   certificates: GraphQLCertificate[];
+  awards: GraphQLAward[];
 }
 
 // Helper function to convert React content to string
@@ -167,5 +183,6 @@ export function resumeDataToGraphQL(data: ResumeData): GraphQLMe {
       link: project.link,
     })),
     certificates: data.certificates,
+    awards: data.awards,
   };
 }

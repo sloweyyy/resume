@@ -100,6 +100,24 @@ export class Certificate {
 }
 
 @ObjectType()
+export class Award {
+	@Field(() => String)
+	title: string;
+
+	@Field(() => String)
+	issuer: string;
+
+	@Field(() => String)
+	date: string;
+
+	@Field(() => String, { nullable: true })
+	description?: string;
+
+	@Field(() => String, { nullable: true })
+	link?: string;
+}
+
+@ObjectType()
 export class Me {
 	@Field(() => String)
 	name: string;
@@ -142,4 +160,7 @@ export class Me {
 
 	@Field(() => [Certificate])
 	certificates: Certificate[];
+
+	@Field(() => [Award])
+	awards: Award[];
 }

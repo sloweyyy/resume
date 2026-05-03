@@ -68,13 +68,13 @@ function ProjectTags({
 
   return (
     <ul
-      className="mt-2 flex list-none flex-wrap gap-1 p-0"
+      className="mt-2 flex list-none flex-wrap gap-1 p-0 print:mt-1 print:gap-x-1 print:gap-y-0.5"
       aria-label="Technologies used"
     >
       {tags.map((tag) => (
         <li key={tag}>
           <Badge
-            className="px-1 py-0 text-[10px] print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
+            className="px-1 py-0 text-[10px] print:px-1 print:py-0 print:text-[7px] print:leading-tight"
             variant="secondary"
           >
             {tag}
